@@ -7,61 +7,241 @@
     <title>Project 10/11</title>
 </head>
 <style>
-    h1{
-        font-size: 30px;
-        text-align: center;
-        margin: 0px;
+    html{
+        scroll-behavior: smooth;
     }
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
     p{
         font-weight: bold;
         font-size: 20px;
     }
     body{
-        background-color: rgb(136, 212, 100);
+        background-color: #FB8500   ;
     }
     section{
         display: flex;
+        flex-wrap: wrap;
     }
-    h2{
-        font-size: 15px;
+    .info{
+        font-size: 20px;
         margin-left: 20px   ;
-        width: 350px;
+        width: 450px;
+        font-weight: 300;
     }
-    .Bird{
-        width: 250px;
-        height: 250px;
+    .project img{
+        width: 25%;
+        height: 300px;
+        border-radius: 10px 
+    }
+    .intro{
+        height: 50rem;
+    }
+    .intro--para{
+        font-weight: bold;
+        font-size: 80px;
+        margin: 150px 100px 00px 100px;
+    }
+    .intro--desc{
+        margin: 10px 0px 0px 100px;
+        width: 850px;
+        font-size: 40px;
+    }
+    button{
+        padding: 25px 50px;
+        border: 2px solid rgb(27, 165, 54);
+        border-radius: 30px;
+        margin-bottom: 10px;
+        background: rgb(27, 165, 54);
+        color: white;
+        margin: 75px 0px 0px 90px;
+        font-size: 25px;
+    }
+    .navbar{
+        position: fixed;
+        display: flex;
+        background: #023047;
+        padding: 20px 20px 20px 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    div > a{
+        text-decoration: none;
+        color: white;
+    }
+    .project{
+        margin-left: 2rem;
+        padding: 5rem 0 0 0;
+    }
+    .project section{
+        margin: 15px 0px 15px 0px;
+        
+    }
+    .navbar a{
+        transition: 0.5s;
+        font-size: 1.2rem;
+         padding: 0.2rem;
+    }
+    .navbar a:hover{
+        color: aqua;
+        transform: scale(1.15);
+        background-color: rgb(90, 162, 68);
+       
+        border-radius: 0.5rem;
+    }
+    .navbar a::after{
+        content: "";
+        display: block;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid rgb(6, 105, 74);
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+    .navbar a:hover::after{
+        transform: scaleX(0.7);
+    }
+    .about-me{
+        height: 50rem;
+        padding: 5rem 0 0 0;
+        /* display: flex; */
+        /* background-color:blue; */
+    }
+    .about--para{
+        margin: 0px 0px 0px 100px;
+        font-size: 4rem;
+    }
+    .about--desc{
+        margin: 10px 0px 0px 100px;
+        width: 45rem;
+        float: left;
+    }
+    .row{
+        display: flex;
+        /* height:22.50rem; */
+
+    }
+    .row img{
+        height: 40rem;
+        width: 40rem;
+    }
+    footer{
+        height: 13rem;
+        background-color: #023047;
+    }
+    .contact{
+        height: 45rem;
+        padding: 8rem 0 0 0;
+        /* margin: 0 0 0 8rem; */
+        /* display: flex; */
+        
+    }
+    .contact img{
+        height: 20rem;
+        border-radius: 100%;
+        width: 20rem;
+        margin: 0 0 0 16rem;
+    }
+    .contact--info{
+        display: flex;
+        margin-top: 4rem;
+    }
+    .contact h2{
+        /* margin: 0 0 0 20rem; */
+        text-align: center;
+        font-size: 4rem;
+        
+        
+    }
+    .contact ul{
+        /* float: right; */
+        float: left;
+        margin: 1rem 0 0 3rem;
+        list-style-type: disc;
     }
 </style>
 
 <body>
     
-    <h1>Project kelas 10/11</h1>
-    <p>1.Pokedex Imitation in Python (10)</p>
-    <section class="Pokedex">
-        <img src="./projects/10/Screenshot 2023-06-11 200022.png">
-        <h2>This Project consist of 4 main components 
-            <br>
-            1. To add Pokemons
-            <br>
-            2. To find a pokemon based on their name
-            <br>
-            3. To add new pokemons to the list
-            <br>
-            4. To remove a pokemon from the Pokedex
-            <br>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#B">About me</a>
+        <a href="#A">Projects</a>
+        <a href="#C">Contacts</a>
+
+    </div>
+
+    <div class="intro" id="">
+        <h1 class="intro--para">Welcome</h1>
+        <h3 class="intro--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt quasi quo molestiae aliquid mollitia. Ex laboriosam quibusdam vero commodi velit! Distinctio, quod. Sed, nostrum.</h3>
+        <a href="#A">
+            <button>To Projects</button>
+        </a>
+    </div>
+    <div class="about-me" id="B">
+        <h1 class="about--para">Introduction</h1>
+        <h2 class="about--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut alias laborum ratione, quaerat harum dicta cum consectetur esse illo temporibus molestias, perferendis distinctio ab!  </h2>
+        <!-- <h3 class="about--info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, fugiat?</h3> -->
+        <div class="row">
+            <img src="./projects/10/outer-digital-space-tq.jpg" alt="">
+        </div>
+    </div>
+    <div class="project"  id="A">
+        <p>1.Pokedex Imitation in Python (10)</p>
+        <section class="Pokedex">
             
-        </h2>
-    </section>
-    <p>2. Flash card using HTML (11)</p>    
-    <section>
-        <img src="./projects/11/Screenshot 2023-06-11 201448.png">
-        <h2>This Project revolves around a series of questions randomly generated by the code, if we got the answer to the questions wrong our score will be deducted and shuffle the question and if we got the question correct we would gain 1 score and it will shiffle the question again. If we get to a point of -5 the program will display a game over screen and we have the option to restart or quit the program, if we get 10 points the program will instead show a winning screen with wither options to quit the game or to restart</h2>
-    </section>
-    <p>3. Flappy bird game using pygame (11)</p>
-    <section>
-        <img src="./projects/10/Screenshot 2023-06-12 190438.png" class="Bird">
-        <h2>This project consist of a few parts including the mechanics of this game and also how the bird jumps</h2>
-    </section>
+            <img src="./projects/10/Screenshot 2023-06-11 200022.png">
+            <h2 class="info">This Project consist of 4 main components 
+                <br>
+                1. To add Pokemons
+                <br>
+                2. To find a pokemon based on their name
+                <br>
+                3. To add new pokemons to the list
+                <br>
+                4. To remove a pokemon from the Pokedex
+                <br>
+                
+            </h2>
+        </section>
+        <p>2. Flash card using HTML (11)</p>    
+        <section>
+            <img src="./projects/11/Screenshot 2023-06-11 201448.png">
+            <h2 class="info">This Project revolves around a series of questions randomly generated by the code, if we got the answer to the questions wrong our score will be deducted and shuffle the question and if we got the question correct we would gain 1 score and it will shiffle the question again. If we get to a point of -5 the program will display a game over screen and we have the option to restart or quit the program, if we get 10 points the program will instead show a winning screen with wither options to quit the game or to restart</h2>
+        </section>
+        <p>3. Flappy bird game using pygame (11)</p>
+        <section>
+            <img src="./projects/10/Screenshot 2023-06-12 190438.png" class="Bird">
+            <h2 class="info">This project consist of a few parts including the mechanics of this game and also how the bird jumps</h2>
+        </section>
+    </div>
+    <div class="contact" id="C">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <div class="contact--info">
+            <img src="./projects/10/outer-digital-space-tq.jpg" alt="">
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nostrum.
+                </li>
+                <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, blanditiis.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, modi!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+
 
 </body>
 </html>
