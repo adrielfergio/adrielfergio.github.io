@@ -6,166 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 10/11</title>
 </head>
-<style>
-    html{
-        scroll-behavior: smooth;
-    }
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    p{
-        font-weight: bold;
-        font-size: 20px;
-    }
-    body{
-        background-color: #FB8500   ;
-    }
-    section{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .info{
-        font-size: 20px;
-        margin-left: 20px   ;
-        width: 450px;
-        font-weight: 300;
-    }
-    .project img{
-        width: 25%;
-        height: 300px;
-        border-radius: 10px 
-    }
-    .intro{
-        height: 50rem;
-    }
-    .intro--para{
-        font-weight: bold;
-        font-size: 80px;
-        margin: 150px 100px 00px 100px;
-    }
-    .intro--desc{
-        margin: 10px 0px 0px 100px;
-        width: 850px;
-        font-size: 40px;
-    }
-    button{
-        padding: 25px 50px;
-        border: 2px solid rgb(27, 165, 54);
-        border-radius: 30px;
-        margin-bottom: 10px;
-        background: rgb(27, 165, 54);
-        color: white;
-        margin: 75px 0px 0px 90px;
-        font-size: 25px;
-    }
-    .navbar{
-        position: fixed;
-        display: flex;
-        background: #023047;
-        padding: 20px 20px 20px 20px;
-        top: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    div > a{
-        text-decoration: none;
-        color: white;
-    }
-    .project{
-        margin-left: 2rem;
-        padding: 5rem 0 0 0;
-    }
-    .project section{
-        margin: 15px 0px 15px 0px;
-        
-    }
-    .navbar a{
-        transition: 0.5s;
-        font-size: 1.2rem;
-         padding: 0.2rem;
-    }
-    .navbar a:hover{
-        color: aqua;
-        transform: scale(1.15);
-        background-color: rgb(90, 162, 68);
-       
-        border-radius: 0.5rem;
-    }
-    .navbar a::after{
-        content: "";
-        display: block;
-        padding-bottom: 0.5rem;
-        border-bottom: 0.1rem solid rgb(6, 105, 74);
-        transform: scaleX(0);
-        transition: 0.2s linear;
-    }
-    .navbar a:hover::after{
-        transform: scaleX(0.7);
-    }
-    .about-me{
-        height: 50rem;
-        padding: 5rem 0 0 0;
-        /* display: flex; */
-        /* background-color:blue; */
-    }
-    .about--para{
-        margin: 0px 0px 0px 100px;
-        font-size: 4rem;
-    }
-    .about--desc{
-        margin: 10px 0px 0px 100px;
-        width: 45rem;
-        float: left;
-    }
-    .row{
-        display: flex;
-        /* height:22.50rem; */
-
-    }
-    .row img{
-        height: 40rem;
-        width: 40rem;
-    }
-    footer{
-        height: 13rem;
-        background-color: #023047;
-    }
-    .contact{
-        height: 45rem;
-        padding: 8rem 0 0 0;
-        /* margin: 0 0 0 8rem; */
-        /* display: flex; */
-        
-    }
-    .contact img{
-        height: 20rem;
-        border-radius: 100%;
-        width: 20rem;
-        margin: 0 0 0 16rem;
-    }
-    .contact--info{
-        display: flex;
-        margin-top: 4rem;
-    }
-    .contact h2{
-        /* margin: 0 0 0 20rem; */
-        text-align: center;
-        font-size: 4rem;
-        
-        
-    }
-    .contact ul{
-        /* float: right; */
-        float: left;
-        margin: 1rem 0 0 3rem;
-        list-style-type: disc;
-    }
-</style>
+<script src="https://kit.fontawesome.com/e130eaa664.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 
 <body>
     
@@ -222,7 +64,7 @@
         </section>
     </div>
     <div class="contact" id="C">
-        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Contact Me</h2>
         <div class="contact--info">
             <img src="./projects/10/outer-digital-space-tq.jpg" alt="">
             <ul>
@@ -239,7 +81,21 @@
         </div>
     </div>
     <footer>
-
+        <div class="social">
+            <a href="https://discordid.netlify.app/?id=630758008917590018">
+                <i class="fa-brands fa-discord fa-xl" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://wa.me/6281958383888">
+                <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>
+            </a>
+            <a href="mailto:adrielwiharja@gmail.com">
+                <i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://github.com/adrielfergio/">
+                <i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i>
+            </a>
+            
+        </div>
     </footer>
 
 
